@@ -12,7 +12,7 @@ package application;
 public class Application {
 
     /**
-     * Clase Aplicación para la aplicación HelloWorldMVC
+     * Clase Aplicación para la aplicación HolaMundoMVC
      * @param args the command line arguments
      */
     
