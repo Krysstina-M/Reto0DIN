@@ -12,10 +12,11 @@ package application;
 public class Application {
 
     /**
+     * Clase Aplicación para la aplicación HelloWorldMVC
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
 }
