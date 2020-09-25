@@ -16,5 +16,7 @@ public interface Model {
      * @return 
      */
     
+    //String getGreeting();
+     
     public String getGreeting();
 }

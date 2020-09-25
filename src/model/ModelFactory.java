@@ -11,7 +11,7 @@ package model;
  */
 public class ModelFactory {
     
-    public Model getModel()
+    public Model getModel()  
     {
         return 
     }
