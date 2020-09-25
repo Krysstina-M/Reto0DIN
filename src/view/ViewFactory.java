@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package view;
 
 /**
- * Contiene los métodos del modelo para ser controlados por un controlador
+ *
  * @author Cristina Milea
  */
-public interface Model {
+public class ViewFactory {
     
     /**
-     * Guarda un saludo en la interfaz del usuario
+     * 
      * @return 
      */
     
-    public String getGreeting();
+    public View getView()
+    {
+        return new ViewImplementation();
+    }
 }

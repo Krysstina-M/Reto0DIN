@@ -6,15 +6,13 @@
 package model;
 
 /**
- * Contiene los métodos del modelo para ser controlados por un controlador
+ *
  * @author Cristina Milea
  */
-public interface Model {
-    
-    /**
-     * Guarda un saludo en la interfaz del usuario
-     * @return 
-     */
-    
-    public String getGreeting();
+public abstract class ModelImplementation implements Model {
+
+    public String getGreeting(String greeting)
+    {
+        return greeting;
+    }
 }
