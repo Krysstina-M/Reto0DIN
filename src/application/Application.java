@@ -12,7 +12,7 @@ import view.View;
 import view.ViewFactory;
 
 /**
- *
+ * Contiene los métodos para ejecutar la vista o el modelo
  * @author Cristina Milea y Jonathan Viñán
  */
 public class Application {

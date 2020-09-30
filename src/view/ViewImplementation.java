@@ -6,7 +6,7 @@
 package view;
 
 /**
- * Implementación de la vista que muestra un mensaje de texto en la interfaz del usuario
+ * Contiene la implementación de la vista que muestra un mensaje de texto en la interfaz del usuario
  * @author Cristina Milea y Jonathan Viñán
  */
 public class ViewImplementation implements View {
