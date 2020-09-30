@@ -5,12 +5,15 @@
  */
 package application;
 
+import controller.Controller;
+import model.Model;
+import model.ModelFactory;
 import view.View;
 import view.ViewFactory;
 
 /**
  *
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class Application {
 
@@ -21,7 +24,14 @@ public class Application {
     
     public static void main(String[] args) {
         View pruebaVista;
-        ViewFactory pruebaVistaFactory=new ViewFactory();
-        pruebaVista=pruebaVistaFactory.getView();
+        ViewFactory pruebaVistaFac=new ViewFactory();
+        pruebaVista=pruebaVistaFac.getView();
+        
+        Model pruebaModel;
+        ModelFactory pruebaModelFac=new ModelFactory();
+        pruebaModel=pruebaModelFac.getModel();
+        
+        Controller prueba=new Controller();
+        prueba.run(pruebaVista, pruebaModel);
     }
 }

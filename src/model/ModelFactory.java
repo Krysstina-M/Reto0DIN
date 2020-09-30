@@ -7,7 +7,7 @@ package model;
 
 /**
  * Contiene los métodos necesarios para obtener los datos de la implementación
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class ModelFactory {
     

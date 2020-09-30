@@ -10,7 +10,7 @@ import view.View;
 
 /**
  * Clase que controla lo que saldrá en la interfaz del usuario
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class Controller {
     

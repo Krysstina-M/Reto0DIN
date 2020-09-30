@@ -7,7 +7,7 @@ package view;
 
 /**
  * Contiene los métodos de la vista para ser controlados por un controlador
- * @author
+ * @author Cristina Milea y Jonathan Viñán
  */
 public interface View {
     

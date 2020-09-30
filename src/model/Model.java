@@ -7,7 +7,7 @@ package model;
 
 /**
  * Contiene los métodos del modelo para ser controlados por un controlador
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public interface Model {
     

@@ -7,7 +7,7 @@ package view;
 
 /**
  *
- * @author 
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class ViewFactory {
     

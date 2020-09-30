@@ -5,21 +5,23 @@
  */
 package model;
 
+import java.util.ResourceBundle;
+
 /**
  * Contiene los métodos necesarios para implementar el saludo en el modelo
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class ModelImplementation implements Model {
 
     /**
-     * Método para guardar el saludo
+     * Método para leer el saludo del archivo de propiedades
      * @return Devuelve el String que guarda el saludo
      */
    
-    @Override
     public String getGreeting() {
-        String greeting="Hola mundo";
-        
+               
+        ResourceBundle saludo=ResourceBundle.getBundle("properties.saludo");
+        String greeting=saludo.getString("greeting");
         return greeting;
     }
 }
