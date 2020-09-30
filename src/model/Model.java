@@ -12,9 +12,9 @@ package model;
 public interface Model {
     
     /**
-     * Guarda un saludo en la interfaz del usuario
-     * @return 
+     * Método que crea el prototipo de la llamada
+     * @return Devuelve lo que tiene el método getGreeting
      */
-     
-    public String getGreeting(); //bien
+    
+    public String getGreeting();
 }
