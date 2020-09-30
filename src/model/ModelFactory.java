@@ -11,8 +11,7 @@ package model;
  */
 public class ModelFactory {
     
-    public Model getModel()  
-    {
-        return 
+    public Model getModel() {
+        return new ModelImplementation(); 
     }
 }

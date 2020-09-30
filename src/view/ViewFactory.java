@@ -7,12 +7,12 @@ package view;
 
 /**
  *
- * @author Cristina Milea
+ * @author 
  */
 public class ViewFactory {
     
     /**
-     * 
+     *
      * @return 
      */
     

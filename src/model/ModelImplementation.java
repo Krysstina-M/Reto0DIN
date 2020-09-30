@@ -6,13 +6,20 @@
 package model;
 
 /**
- *
+ * Clase que contiene los métodos necesarios para implementar el saludo en el modelo
  * @author Cristina Milea
  */
-public abstract class ModelImplementation implements Model {
+public class ModelImplementation implements Model {
 
-    public String getGreeting(String greeting)
-    {
+    /**
+     * Método para guardar el saludo
+     * @param greeting
+     * @return Devuelve el String que guarda el saludo
+     */
+   
+    public String getGreeting() {
+        String greeting="Hola mundo";
+        
         return greeting;
     }
 }

@@ -7,7 +7,7 @@ package view;
 
 /**
  * Implementación de la vista que muestra un mensaje de texto en la interfaz del usuario
- * @author Cristina Milea
+ * @author
  */
 public class ViewImplementation implements View {
     
@@ -17,8 +17,7 @@ public class ViewImplementation implements View {
      */
     
     @Override
-    public void showGreeting (String greeting)
-    {
+    public void showGreeting (String greeting) {
         System.out.println(greeting);
     }
 }

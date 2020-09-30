@@ -15,8 +15,6 @@ public interface Model {
      * Guarda un saludo en la interfaz del usuario
      * @return 
      */
-    
-    //String getGreeting();
      
-    public String getGreeting();
+    public String getGreeting(); //bien
 }
