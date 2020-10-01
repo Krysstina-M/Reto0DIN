@@ -7,7 +7,7 @@ package view;
 
 /**
  * Contiene los métodos de la vista para ser controlados por un controlador
- * @author Cristina Milea
+ * @author Cristina Milea y Jonathan Viñán
  */
 public interface View {
     
@@ -16,5 +16,5 @@ public interface View {
      * @param greeting un String que muestra el saludo
      */
     
-    public void showGreeting (String greeting);
+    public void showGreeting(String greeting);
 }

@@ -5,18 +5,33 @@
  */
 package application;
 
+import controller.Controller;
+import model.Model;
+import model.ModelFactory;
+import view.View;
+import view.ViewFactory;
+
 /**
- *
- * @author 2dam
+ * Contiene los métodos para ejecutar la vista o el modelo
+ * @author Cristina Milea y Jonathan Viñán
  */
 public class Application {
 
     /**
-     * Clase Aplicación para la aplicación HelloWorldMVC
+     * Clase Aplicación para la aplicación HolaMundoMVC
      * @param args the command line arguments
      */
     
     public static void main(String[] args) {
-        // TODO code application logic here
+        View pruebaVista;
+        ViewFactory pruebaVistaFac=new ViewFactory();
+        pruebaVista=pruebaVistaFac.getView();
+        
+        Model pruebaModel;
+        ModelFactory pruebaModelFac=new ModelFactory();
+        pruebaModel=pruebaModelFac.getModel();
+        
+        Controller prueba=new Controller();
+        prueba.run(pruebaVista, pruebaModel);
     }
 }

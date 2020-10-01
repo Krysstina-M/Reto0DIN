@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package view;
 
 /**
- * Contiene los métodos del modelo para ser controlados por un controlador
+ * Contiene los métodos necesarios para obtener los datos de la implementación
  * @author Cristina Milea y Jonathan Viñán
  */
-public interface Model {
+public class ViewFactory {
     
     /**
-     * Método que crea el prototipo de la llamada
-     * @return Devuelve lo que tiene el método getGreeting
+     * Método para crear una nueva implementación
+     * @return 
      */
     
-    public String getGreeting();
+    public View getView()
+    {
+        return new ViewImplementation();
+    }
 }
