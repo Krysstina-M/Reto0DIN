@@ -5,19 +5,25 @@
  */
 package view;
 
+import javaFX.FXMLInterfaceController;
+import javaFX.JavaFXInterfaz;
+import static javafx.application.Application.launch;
+
 /**
- * Contiene la implementación de la vista que muestra un mensaje de texto en la interfaz del usuario
+ * Contiene la implementación de la vista que muestra un mensaje de texto en la
+ * interfaz del usuario
+ *
  * @author Cristina Milea y Jonathan Viñán
  */
 public class ViewImplementation implements View {
-    
+
     /**
      * Muestra un saludo en la interfaz del usuario
+     *
      * @param greeting un String que muestra el saludo
      */
-    
-    @Override
-    public void showGreeting (String greeting) {
+    public void showGreeting(String greeting){
         System.out.println(greeting);
     }
+      
 }

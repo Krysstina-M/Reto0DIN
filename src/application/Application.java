@@ -6,6 +6,8 @@
 package application;
 
 import controller.Controller;
+import controller.Utilidades;
+import java.util.Properties;
 import model.Model;
 import model.ModelFactory;
 import view.View;
@@ -13,25 +15,63 @@ import view.ViewFactory;
 
 /**
  * Contiene los métodos para ejecutar la vista o el modelo
+ *
  * @author Cristina Milea y Jonathan Viñán
  */
 public class Application {
 
     /**
      * Clase Aplicación para la aplicación HolaMundoMVC
+     *
      * @param args the command line arguments
      */
-    
     public static void main(String[] args) {
-        View pruebaVista;
-        ViewFactory pruebaVistaFac=new ViewFactory();
-        pruebaVista=pruebaVistaFac.getView();
+
+        int opcion = 0;
+       
         
-        Model pruebaModel;
-        ModelFactory pruebaModelFac=new ModelFactory();
-        pruebaModel=pruebaModelFac.getModel();
+        opcion = menu();
+
+       
+           if (opcion==1) {
+            View pruebaVista;
+            ViewFactory pruebaVistaFactory = new ViewFactory();
+            pruebaVista = pruebaVistaFactory.getView();
+
+            Model pruebaModel;
+            ModelFactory pruebaModelFactory = new ModelFactory();
+            pruebaModel = pruebaModelFactory.getModel();
+
+            Controller prueba = new Controller(pruebaVista, pruebaModel);
+            prueba.run();
+        }else{
+            View pruebaVista;
+            ViewFactory pruebaVistaFactory = new ViewFactory();
+            pruebaVista = pruebaVistaFactory.getViewI();
+
+            Model pruebaModel;
+            ModelFactory pruebaModelFactory = new ModelFactory();
+            pruebaModel = pruebaModelFactory.getModel();
+
+            Controller prueba = new Controller(pruebaVista, pruebaModel);
+            prueba.run();
+           }
+            
+
+       
+            
+            
         
-        Controller prueba=new Controller();
-        prueba.run(pruebaVista, pruebaModel);
+
+    }
+
+    private static int menu() {
+        int opc = 0;
+        System.out.println("M E N U");
+        System.out.println("1.-Texto Grafico\n"+
+                            "2.-Texto Interfaz\n");
+        opc = Utilidades.leerInt(1, 3);
+
+        return opc;
     }
 }

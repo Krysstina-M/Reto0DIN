@@ -5,6 +5,9 @@
  */
 package view;
 
+import javaFX.FXMLInterfaceController;
+import javaFX.JavaFXInterfaz;
+
 /**
  * Contiene los métodos necesarios para obtener los datos de la implementación
  * @author Cristina Milea y Jonathan Viñán
@@ -16,8 +19,20 @@ public class ViewFactory {
      * @return 
      */
     
+    
     public View getView()
     {
         return new ViewImplementation();
     }
+
+    /**
+     *
+     */
+    public static View getViewI()
+    {
+       JavaFXInterfaz view = new JavaFXInterfaz();
+        return view;
+    }
+    
+    
 }

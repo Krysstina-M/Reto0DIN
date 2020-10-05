@@ -24,4 +24,6 @@ public class ModelImplementation implements Model {
         String greeting=saludo.getString("greeting");
         return greeting;
     }
+    
+    
 }
