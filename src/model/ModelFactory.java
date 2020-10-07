@@ -17,6 +17,7 @@ public class ModelFactory {
      */
     
     public Model getModel() {
-        return new ModelImplementation(); 
+        ModelImplementation model = new ModelImplementation();
+        return model; 
     }
 }
