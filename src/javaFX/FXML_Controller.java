@@ -18,10 +18,11 @@ import view.View;
 
 /**
  * FXML Controller class
- *  
+ *
  * @author Cristina Milea y Jonathan Viñán
  */
 public class FXML_Controller {
+
     @FXML
     private Pane pane;
     @FXML
@@ -44,16 +45,15 @@ public class FXML_Controller {
     public void setStage(Stage stage) {
         this.stage = stage;
     }
+
     @FXML
     public void onShowWindow(WindowEvent event) {
-       
+
         label.setText(greeting);
     }
 
-    
     public void iniciarStage() {
         stage.setOnShown(this::onShowWindow);
     }
-    
-   
+
 }

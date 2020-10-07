@@ -22,8 +22,8 @@ public class ViewImplementation implements View {
      *
      * @param greeting un String que muestra el saludo
      */
-    public void showGreeting(String greeting){
+    public void showGreeting(String greeting) {
         System.out.println(greeting);
     }
-      
+
 }

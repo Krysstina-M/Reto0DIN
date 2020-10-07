@@ -10,23 +10,25 @@ import static org.junit.Assert.*;
 
 /**
  * Contiene los métodos del test de la clase Modelimplementation
+ *
  * @author Cristina Milea y Jonathan Viñán
  */
 public class ModelImplementationTest {
-    
+
     public ModelImplementationTest() {
     }
 
     /**
-     * Comprueba si el saludo del archivo de propiedades es el mismo que hemos declarado aqui
+     * Comprueba si el saludo del archivo de propiedades es el mismo que hemos
+     * declarado aqui
      */
     @Test
     public void testGetGreeting() {
-        System.out.println("getGreeting");
+        System.out.println("Prueba ejecutada");
         ModelImplementation instance = new ModelImplementation();
-        String expResult = "Hola mundo <3";
+        String expResult = "Buenos dias";
         String result = instance.getGreeting();
         assertEquals("El saludo que guarda no coincide", expResult, result);
     }
-   
+
 }

@@ -30,32 +30,31 @@ public class Application {
 
         opcion = menu();
 
-       if(opcion==1){
-        View pruebaVista;
-        ViewFactory pruebaVistaFactory = new ViewFactory();
-        pruebaVista = pruebaVistaFactory.getView();
+        if (opcion == 1) {
+            View pruebaVista;
+            ViewFactory pruebaVistaFactory = new ViewFactory();
+            pruebaVista = pruebaVistaFactory.getView();
 
-        Model pruebaModel;
-        ModelFactory pruebaModelFactory = new ModelFactory();
-        pruebaModel = pruebaModelFactory.getModel();
+            Model pruebaModel;
+            ModelFactory pruebaModelFactory = new ModelFactory();
+            pruebaModel = pruebaModelFactory.getModel();
 
-        Controller prueba = new Controller(pruebaVista, pruebaModel);
-        prueba.run();
-       }
-       else if (opcion==2){
-        View pruebaVista;
-        ViewFactory pruebaVistaFactory = new ViewFactory();
-        pruebaVista = pruebaVistaFactory.getViewI();
+            Controller prueba = new Controller(pruebaVista, pruebaModel);
+            prueba.run();
+        } else if (opcion == 2) {
+            View pruebaVista;
+            ViewFactory pruebaVistaFactory = new ViewFactory();
+            pruebaVista = pruebaVistaFactory.getViewI();
 
-        Model pruebaModel;
-        ModelFactory pruebaModelFactory = new ModelFactory();
-        pruebaModel = pruebaModelFactory.getModel();
+            Model pruebaModel;
+            ModelFactory pruebaModelFactory = new ModelFactory();
+            pruebaModel = pruebaModelFactory.getModel();
 
-        Controller prueba = new Controller(pruebaVista, pruebaModel);
-        prueba.run();
-       }else{
-           System.out.println("ADIOS");
-       }
+            Controller prueba = new Controller(pruebaVista, pruebaModel);
+            prueba.run();
+        } else {
+            System.out.println("ADIOS");
+        }
     }
 
     private static int menu() {

@@ -10,30 +10,28 @@ import javaFX.JavaFXInterfaz;
 
 /**
  * Contiene los métodos necesarios para obtener los datos de la implementación
+ *
  * @author Cristina Milea y Jonathan Viñán
  */
 public class ViewFactory {
-    
+
     /**
      * Método para crear una nueva implementación
-     * @return 
+     *
+     * @return Devuelve la implementacion
      */
-    
-    
-    public View getView()
-    {
+    public View getView() {
         return new ViewImplementation();
     }
 
     /**
-     *Método para crear una nueva implementación para la interfaz
-     * @return 
+     * Método para crear una nueva implementación para la interfaz
+     *
+     * @return La vista
      */
-    public View getViewI()
-    {
-       JavaFXInterfaz view = new JavaFXInterfaz();
+    public View getViewI() {
+        JavaFXInterfaz view = new JavaFXInterfaz();
         return view;
     }
-    
-    
+
 }
