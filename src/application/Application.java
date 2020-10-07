@@ -7,7 +7,6 @@ package application;
 
 import controller.Controller;
 import controller.Utilidades;
-import java.util.Properties;
 import model.Model;
 import model.ModelFactory;
 import view.View;
@@ -28,50 +27,46 @@ public class Application {
     public static void main(String[] args) {
 
         int opcion = 0;
-       
-        
+
         opcion = menu();
 
-       
-           if (opcion==1) {
-            View pruebaVista;
-            ViewFactory pruebaVistaFactory = new ViewFactory();
-            pruebaVista = pruebaVistaFactory.getView();
+       if(opcion==1){
+        View pruebaVista;
+        ViewFactory pruebaVistaFactory = new ViewFactory();
+        pruebaVista = pruebaVistaFactory.getView();
 
-            Model pruebaModel;
-            ModelFactory pruebaModelFactory = new ModelFactory();
-            pruebaModel = pruebaModelFactory.getModel();
+        Model pruebaModel;
+        ModelFactory pruebaModelFactory = new ModelFactory();
+        pruebaModel = pruebaModelFactory.getModel();
 
-            Controller prueba = new Controller(pruebaVista, pruebaModel);
-            prueba.run();
-        }else{
-            View pruebaVista;
-            ViewFactory pruebaVistaFactory = new ViewFactory();
-            pruebaVista = pruebaVistaFactory.getViewI();
+        Controller prueba = new Controller(pruebaVista, pruebaModel);
+        prueba.run();
+       }
+       else if (opcion==2){
+        View pruebaVista;
+        ViewFactory pruebaVistaFactory = new ViewFactory();
+        pruebaVista = pruebaVistaFactory.getViewI();
 
-            Model pruebaModel;
-            ModelFactory pruebaModelFactory = new ModelFactory();
-            pruebaModel = pruebaModelFactory.getModel();
+        Model pruebaModel;
+        ModelFactory pruebaModelFactory = new ModelFactory();
+        pruebaModel = pruebaModelFactory.getModel();
 
-            Controller prueba = new Controller(pruebaVista, pruebaModel);
-            prueba.run();
-           }
-            
-
-       
-            
-            
-        
-
+        Controller prueba = new Controller(pruebaVista, pruebaModel);
+        prueba.run();
+       }else{
+           System.out.println("ADIOS");
+       }
     }
 
     private static int menu() {
         int opc = 0;
         System.out.println("M E N U");
-        System.out.println("1.-Texto Grafico\n"+
-                            "2.-Texto Interfaz\n");
+        System.out.println("1.-Texto por consola\n"
+                + "2.-Texto en ventana\n"
+                + "3.-Salir");
         opc = Utilidades.leerInt(1, 3);
 
         return opc;
     }
+
 }

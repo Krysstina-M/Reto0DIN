@@ -5,7 +5,7 @@
  */
 package view;
 
-import javaFX.FXMLInterfaceController;
+import javaFX.FXML_Controller;
 import javaFX.JavaFXInterfaz;
 import static javafx.application.Application.launch;
 

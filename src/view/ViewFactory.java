@@ -5,7 +5,7 @@
  */
 package view;
 
-import javaFX.FXMLInterfaceController;
+import javaFX.FXML_Controller;
 import javaFX.JavaFXInterfaz;
 
 /**
@@ -26,9 +26,10 @@ public class ViewFactory {
     }
 
     /**
-     *
+     *Método para crear una nueva implementación para la interfaz
+     * @return 
      */
-    public static View getViewI()
+    public View getViewI()
     {
        JavaFXInterfaz view = new JavaFXInterfaz();
         return view;

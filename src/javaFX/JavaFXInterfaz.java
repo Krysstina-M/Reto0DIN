@@ -5,7 +5,6 @@
  */
 package javaFX;
 
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,21 +19,27 @@ import view.View;
 import view.ViewImplementation;
 
 /**
- *
- * @author jonyv
+ * Clase que ejecurata la ventana
+ * @author Cristina Milea y Jonathan Viñán  
  */
 public class JavaFXInterfaz extends Application implements View {
 
      private String saludo;
 
+    /**
+     * 
+     * @param primaryStage
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     @Override
     public void start(Stage primaryStage) throws FileNotFoundException, IOException {
         
    
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLInterface.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML.fxml"));
             Parent root = (Parent) loader.load();
-            FXMLInterfaceController viewController = ((FXMLInterfaceController) loader.getController());
+            FXML_Controller viewController = ((FXML_Controller) loader.getController());
             viewController.setGreeting(saludo);
             viewController.setStage(primaryStage);
             viewController.iniciarStage();
