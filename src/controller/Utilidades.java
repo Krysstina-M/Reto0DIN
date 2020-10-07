@@ -285,12 +285,7 @@ public class Utilidades {
 		return fecha;
 	}
 
-        
-    /**
-     *
-     * @param message
-     * @return
-     */
+    
    /* public static Date introduceFecha2(String message) {
 		String fechaS;
 		boolean hay;
